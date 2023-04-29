@@ -45,8 +45,8 @@ app.delete("/delete/:foodId", (req, res) => {
 
 app.put("/update/:foodId", (req, res) => {
 console.log(req)
-    const foodName = req.body.setFoodName;
-    const foodId = req.params.setType;
+    const foodName = req.body.foodUpdate;
+    const foodId = req.params.foodId;
     const UpdateQuery = "UPDATE food SET name = ? WHERE id = ?";
     db.query(UpdateQuery, [foodName, foodId], (err, result) => {
       if (err) console.log(err)

@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS `food` (
   `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `id_type` int unsigned NOT NULL,
   `name` varchar(256) NOT NULL
-) ENGINE='InnoDB' DEFAULT CHARSET=latin1;
+) ENGINE='InnoDB' DEFAULT CHARSET=utf8;
 
 /* Carboidratos */
 INSERT INTO `food`(id_type, name) VALUES (0, 'Arroz branco'), (0, 'Macarrão'), (0, 'Mandioca'), (0, 'Milho verde');
